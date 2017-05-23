@@ -55,8 +55,8 @@ var settings = getSettings();
 
 function getSettings() {
   var settingsString = localStorage[ SETTINGS_KEY];
-  if (s) {
-    return JSON.parse (s);
+  if (settingsString) {
+    return JSON.parse (settingsString);
   }else {
     return{}
   }
