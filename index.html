@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>WEEK6 HTML5 </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    
+    <h1>Table Database AND Local storage!</h1>
+    <h2>Week 6 Homework</h2>
+    <div id="tablePage">
+       <button type="button" id="newPerson">Add New Item</button>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Favorite Color</th>
+          </tr>
+        </thead>
+        <tbody id="peopleData">
+          <!--where user data goes-->        
+        </tbody>
+       </table>
+      </div>
+    <div id="formPage" style="display:none">
+    <form name="myForm">
+      <label for="name">Enter name:</label>
+      <input type="text" id="name" name="name"><br>
+       
+      <label for="age">Enter age:</label>
+      <input type="number" id="age" name="age">
+      
+      <label for="color">Enter favorite color:</label>
+      <input type="color" id="color" name="color">
+      
+      <button type="button" id="submit">Submit</button>
+      <button type="button" id="cancel">Cancel</button>
+      <br>
+    </form>
+    </div>  
+        
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="  crossorigin="anonymous"></script>
+    
+    <script src="tabledatabase.js"></script>
+   
+
+  </body>
+</html>
