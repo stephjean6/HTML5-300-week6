@@ -45,6 +45,7 @@ function submitForm ( event ) {
   person.color = $('#color').val();
   people.push (person);
   populatingTbody ( );
+  saveSettings();
 }
 
 //save to local storage
