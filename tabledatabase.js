@@ -55,7 +55,7 @@ var SETTINGS_KEY = "LSS_Settings";
 var settings = getSettings();
 
 function getSettings() {
-  var settingsString = localStorage[ "people" ];
+  var settingsString = localStorage[ SETTINGS_KEY ];
   if (settingsString) {
     return JSON.parse (settingsString);
   }else {
@@ -64,7 +64,7 @@ function getSettings() {
 }
 
 function saveSettings(){
-  localStorage[ "people" ] =JSON.stringify(settings);
+  localStorage[ SETTINGS_KEY ] =JSON.stringify(people);
 }
 
 /*localStorage.setItem("people", JSON.stringify(people));
