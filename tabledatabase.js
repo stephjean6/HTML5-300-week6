@@ -1,4 +1,4 @@
-var people =[];
+/*var people =[];*/
 
   function makePeopleTableRow( person ) {
       var tr = $('<tr>');
@@ -52,7 +52,7 @@ function submitForm ( event ) {
 
 var SETTINGS_KEY = "LSS_Settings";
 
-var settings = getSettings();
+var people= getSettings();
 
 function getSettings() {
   var settingsString = localStorage[ SETTINGS_KEY ];
